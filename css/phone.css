@@ -1,0 +1,74 @@
+#navbar{
+    flex-wrap: wrap;
+}
+
+#navbar #nav a{
+    padding: 2px 4px;
+    margin: 2px 4px;
+}
+
+#navbar button{
+    margin: 2px 2px;
+}
+
+#home{
+    height: 100vh;
+    padding: 0px 0px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    height: 100%;
+}
+
+#home h1{
+    font-size: 40px;
+}
+
+#home p{
+    font-size: large;
+}
+
+#services{
+    height: auto;
+}
+
+#about-services{
+    flex-direction: column;
+    height: auto;
+    flex-wrap: wrap;
+    
+}
+
+#about-services div{
+    height: auto;
+    max-height: 70vh;
+    width: auto;
+    max-width: 80vw;
+    min-width: 100px;
+}
+
+#partners{
+    height: auto;
+    flex-wrap: wrap;
+}
+
+#about-partners{
+    flex-wrap: wrap;
+    height: auto;
+}
+
+#partners div img{
+    height: 50px;
+    width: 50px;
+    margin: 2rem 1rem;
+}
+
+#partners::before{
+    height: 100%;
+}
+
+#contact-us::before{
+    height: 100%;
+}
