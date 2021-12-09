@@ -88,6 +88,10 @@
     justify-content: center;
 }
 
+.inner_menu img{
+    box-shadow: 2px 2px 2px 2px rgb(92, 18, 18);
+}
+
 .inner_menu ul li{
     margin: 0px;
 }

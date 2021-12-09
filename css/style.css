@@ -244,6 +244,7 @@ button, a, div, img{
 .inner_menu img{
     height: 100%;
     width: auto;
+    box-shadow: 5px 5px 5px 5px rgb(92, 18, 18);
 }
 
 .inner_menu div{
@@ -261,7 +262,7 @@ button, a, div, img{
 
 .inner_menu ul li{
     margin: 10px;
-    font-family: baloo-2;
+    font-family: 'Baloo 2';
 }
 
 #menu1{
