@@ -1,11 +1,12 @@
 
 #navbar{
     flex-wrap: wrap;
-    position: fixed;
 }
 
 #navbar img{
     margin: 5px 0px;
+    height: 35px;
+    width: 35px;
 }
 
 #nav{
@@ -17,8 +18,9 @@
 }
 
 #navbar #nav a{
-    padding: 2px 4px;
-    margin: 2px 5px;
+    padding: 1px 3px;
+    margin: 2px;
+    border-radius: 5px;
 }
 
 #navbar button{
@@ -26,8 +28,8 @@
 }
 
 #reach-us button{
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
 }
 #home{
     height: 100vh;
@@ -81,14 +83,13 @@
 }
 
 .inner_menu ul{
-    font-size: medium;
+    font-size: small;
     list-style-type: disc;
     justify-content: center;
-    margin-top: 50px;
 }
 
 .inner_menu ul li{
-    margin: 10px 0px;
+    margin: 0px;
 }
 
 #menu1:hover{

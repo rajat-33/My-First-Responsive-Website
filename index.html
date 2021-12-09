@@ -1,3 +1,6 @@
+
+    <!-- menu card using js/animations/flashing up like a book shelf -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,33 +14,38 @@
         href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Baloo+Bhai+2:wght@500&family=EB+Garamond&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 1000px) and (min-width:500px)" href="css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="css/smallphone.css">
     <title>Best Online Food Online | OnlineMeals.com</title>
 </head>
 
 <body>
+    
+    
     <section id="navbar">
-        <div>
+        <div id = "companyLogo">
             <img src="images/logo2.jpg" alt="Not Found">
         </div>
         <div id="nav">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#partners">Partners</a>
-            <a href="#contact-us">Feedback</a>
+            <a href="#target_home">Home</a>
+            <a href="#target_services">Services</a>
+            <a href="#target_menu">Menu</a>
+            <a href="#target_contact-us">Feedback</a>
         </div>
         <div id="reach-us">
-            <button id="btn1"></button>
+            <button id="btn1"</button>
             <button id="btn2"></button>
             <button id="btn3"></button>
         </div>
     </section>
+    <div id="target_home"></div>
     <section id="home">
         <h1 class="h-primary">Welcome to OnlineMeals</h1>
         <p>Lorem ipsum dolor consectetur, adipisicing elit. Illum cumque impedit dolore voluptatum fugit.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cumque.</p>
         <button>Order Now!</button>
     </section>
+    <div class = "target" id="target_services"></div>
     <section id="services">
         <h1 class="h-primary">Our Services</h1>
         <div id="about-services">
@@ -62,6 +70,56 @@
             </div>
         </div>
     </section>
+    <div class = "target" id="target_menu"></div>
+    <section id="menu_out">
+        <h1 class="h-primary" style="text-align: center; margin: 10px 0px">Our Menu</h1>
+        <section id="menu">
+            <div class="inner_menu" id="menu1">
+                <img src="images/menu_card_sweets.jpg" alt="Not Found">
+                <div>
+                    <ul>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner_menu" id="menu2">
+                <img src="images/menu_card_snacks.jpg" alt="Not Found">
+                <div>
+                    <ul>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner_menu" id="menu3">
+                <img src="images/menu_card_southIndian.jpg" alt="Not Found">
+                <div>
+                    <ul>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner_menu" id="menu4">
+                <img src="images/menu_card_northIndian.jpg" alt="Not Found">
+                <div>
+                    <ul>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                        <li>Lorem ipsum dol. &nbsp &nbsp Price: ₹x</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
     <section id="partners">
         <h1 class="h-primary">Our Partners</h1>
         <div id="about-partners">
@@ -72,44 +130,51 @@
             <div id="partner-6"><img src="images/partner6.png" alt=""></div>
         </div>
     </section>
+    <div class = "target" id="target_contact-us"></div>
     <section id="contact-us">
         <form action="back.php">
             <h2>Leave Us A Feedback &#128515</h2>
-            Enter Name: <input type="text" name="YourName" id="">
-            Enter Address: <input type="text" name="Address" id="">
-            Enter E-mail: <input type="email" name="Email" id="">
-            Enter Food Item: <input type="text" name="" id="">
-            Enter Feedback: <textarea name="Your Query" id="" cols="40" rows="5"></textarea>
-            <hr>
+            <div>
+                <label for="Yourname">Name: &nbsp; &nbsp; &nbsp; </label>
+                <input type="text" name="YourName" id="" placeholder="Your Name">
+            </div>
+            <div>E-mail: &nbsp; &nbsp; &nbsp; <input type="email" name="Email" id="" placeholder="Your E-Mail"></div>
+            <div>Item: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="" id="" placeholder="Food Item"></div>
+            <div>Feedback: &nbsp;  <textarea name="Your Query" id="" cols="22" rows="2" placeholder="Give Feedback"></textarea></div>
             <h2>Rate Us</h2>
-            Customer Satisfaction: <select name="CS1" id="1">
+            <label for="CS1">Customer Satisfaction: </label>
+            <select name="CS1" id="1">
                 <option value="E">Excellent</option>
                 <option value="Vg">Very Good</option>
                 <option value="G">Good</option>
                 <option value="B">Bad</option>
                 <option value="Vb">Very Bad</option>
             </select>
-            On-Time Delivery: <select name="CS1" id="1">
+            
+            <label for="CS2">On-Time Delivery: </label> 
+            <select name="CS2" id="1">
                 <option value="E">Excellent</option>
                 <option value="Vg">Very Good</option>
                 <option value="G">Good</option>
                 <option value="B">Bad</option>
                 <option value="Vb">Very Bad</option>
             </select>
-            Delivery With Care: <select name="CS1" id="1">
+            <!-- <label for="CS3">Delivery With Care:</label> 
+            <select name="CS3" id="1">
                 <option value="E">Excellent</option>
                 <option value="Vg">Very Good</option>
                 <option value="G">Good</option>
                 <option value="B">Bad</option>
                 <option value="Vb">Very Bad</option>
-            </select>
+            </select> -->
             <input class="chota-box" type="submit" value="Submit">
             <input class="chota-box" type="reset" value="Reset">
-        </form>
-        <div id="copyright">
-            <p>&copy All Copyrights Reserved</p>
-        </div>
+        </form>   
     </section>
+    
+    <div id="copyright">
+        <p>&copy All Copyrights Reserved</p>
+    </div>
 </body>
 
 </html>

@@ -5,9 +5,11 @@
     font-family: 'EB Garamond', serif;
 }
 
+
 html{
     scroll-behavior: smooth;
 }
+
 
 .h-primary{
     /* give some really cool fonts */
@@ -36,7 +38,7 @@ button, a, div, img{
 #nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #navbar::before{
@@ -94,6 +96,11 @@ button, a, div, img{
 }
 #reach-us #btn3{
     background: url(../images/twitterlogo.jpg) no-repeat center center/cover;
+}
+
+
+.target{
+    height: 50px;
 }
 
 #home{
@@ -154,6 +161,12 @@ button, a, div, img{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+#services:hover{
+    box-shadow: 0px 0px 10px 10px rgb(161, 102, 102);
 }
 
 #about-services{
@@ -169,7 +182,7 @@ button, a, div, img{
     width: 60vw;
     border: 2px solid black;
     border-radius: 50px;
-    margin: 30px 15px;
+    margin: 40px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,12 +191,114 @@ button, a, div, img{
 }
 
 #about-services div:hover{
-    box-shadow: 0px 0px 15px 5px black;
+    box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
     cursor: pointer;
 }
 
 #about-services img{
     margin-bottom: 20px;
+}
+
+#menu_out{
+    transition: all;
+    transition-duration: 500ms;
+}
+
+#menu_out:hover{
+    box-shadow: 0px 0px 5px 10px rgb(88, 48, 48);
+}
+
+#menu{
+    position: relative;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 70vh;
+    width: 100vw;
+    transition: all;
+    transition-duration: 500ms;
+    padding: 10px;
+}
+
+
+.inner_menu{
+    height: 30vh;
+    width: auto;
+    position: absolute;
+    transition: all;
+    transition-duration: 800ms;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    cursor:pointer;
+}
+
+
+
+.inner_menu:hover{
+    color: rgb(83, 83, 144);
+}
+
+.inner_menu img{
+    height: 100%;
+    width: auto;
+}
+
+.inner_menu div{
+    max-width: 35vw;
+    height: 100%;
+}
+
+.inner_menu ul{
+    font-size: 20px;
+    margin-left: 5vw;
+    list-style-type: disc;
+    font-weight: 600;
+    max-width: 33vw;
+}
+
+.inner_menu ul li{
+    margin: 10px;
+    font-family: baloo-2;
+}
+
+#menu1{
+    z-index: 0.1;
+}
+
+#menu1:hover{
+    transform: translate(0vw, 35vh);
+}
+
+#menu2{
+    z-index: 0.2;
+    margin-left: 14vw;
+}
+
+#menu2:hover{
+    transform: translate(-14vw, 35vh);
+}
+
+#menu3{
+    z-index: 0.3;
+    margin-left: 28vw;
+    margin-top: 0vh;
+}
+
+#menu3:hover{
+    transform: translate(-28vw, 35vh);
+}
+
+#menu4{
+    z-index: 0.4;
+    margin-left: 42vw;
+    margin-top: 0vh;
+}
+
+#menu4:hover{
+    transform: translate(-42vw, 35vh);
 }
 
 #partners{
@@ -193,6 +308,13 @@ button, a, div, img{
     align-items: center;
     justify-content: center;
     height: auto;
+    transition: all;
+    transition-duration: 500ms;
+    margin: 10px 0px;
+}
+
+#partners:hover{
+    box-shadow: 0px 0px 10px 10px rgb(75, 47, 47);
 }
 
 #partners::before{
@@ -200,15 +322,11 @@ button, a, div, img{
     position: absolute;
     height: 100%;
     width: 100%;
-    background: url(../images/s4.jpg) no-repeat center bottom/cover ;
+    
     z-index: -1;
     opacity: 0.8;
 }
 
-#partners h1{
-    color: white;
-    text-shadow: 4px 5px 6px black;
-}
 
 #about-partners{
     position: relative;
@@ -217,30 +335,36 @@ button, a, div, img{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px 0px;
 }
+
+
+
 #partners div img{
     height: 5rem;
     width: 7rem;
     margin: 2rem 2rem;
     border-radius: 30px;
     box-shadow: 0px 0px 3px 3px black;
+    transition: all;
 }
 
-#partners div img:hover{
-    box-shadow: 0px 0px 15px 5px rgb(42, 41, 41);
-}
 
 #contact-us{
+    height: 100%;
     position: relative;
-    height: auto;
+    width: 100%;
+    transition: all;
+    transition-duration: 500ms;
 }
-
+#contact-us:hover{
+    box-shadow: 0px 0px 5px 10px rgb(88, 48, 48);
+}
 #contact-us::before{
     content: '';
     position: absolute;
     background: url(../images/s1.jpg) no-repeat center center/cover;
     z-index: -1;
-    opacity: 0.5;
     height: 100%;
     width: 100%;
 }
@@ -251,30 +375,54 @@ button, a, div, img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
-    text-shadow: 1px 1px 5px rgb(230, 233, 255);
+    font-family: 'Courier New', Courier, monospace;
+    color: black;   
+    margin-left: 30%;
+    padding: 30px;
+    width: 40%;
+    border-radius: 250px;
+    background-color: white;
 }
 
 #contact-us h2{
-    margin: 20px 0px;
-    text-decoration: underline;
+    margin: 10px 0px;
+    font-weight:bolder;
 }
 #contact-us select{
     margin: 10px;
 }
 #contact-us form input{
-    height: 25px;
-    width: 40%;
+    height: 4%;
+    width: 60%;
     font-size: 1rem;
     margin: 5px 0px;
     border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
 }
-#contact-us form input:hover, textarea:hover{
-    background-color: rgb(225, 238, 248);
+#contact-us select{
+    height: 3%;
+    width: 50%;
+    font-size: 1rem;
+    margin: 5px 0px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
 }
+#contact-us form input:hover, textarea:hover, select:hover{
+    background-color: rgb(167, 167, 167);
+}
+#contact-us form input:focus,textarea:focus{
+    background-color: rgb(236, 236, 236);
+}
+
 #contact-us form textarea, select{
     border-radius: 5px;
+    border: 2px solid black;
+    font-size: 1rem;
+    padding: 5px;
 }
 #contact-us .chota-box{
     width: 40%;
@@ -283,14 +431,23 @@ button, a, div, img{
     display: flex;
     height: auto;
     width: 100%;
-    background-color: rgb(29, 29, 29);
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
     color: beige;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-#copyright{
-    width: 100%;
-    height: auto;
-    padding: 5px;
-}
+
+
+/* 
+In contact-us form
+
+
+display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 200px));
+    justify-content: space-evenly;
+    align-items: center;
+    grid-gap: 20px;
+    height: 50vh;
+    width: 100%; */
