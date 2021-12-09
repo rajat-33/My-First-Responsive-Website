@@ -239,6 +239,7 @@ button, a, div, img{
 
 .inner_menu:hover{
     color: rgb(83, 83, 144);
+    z-index: 1;
 }
 
 .inner_menu img{
